@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blue Check Café — Menu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f6f8fc;--ink:#14213d;--blue:#2c4a9a;--butter:#f4c542;--card:#fff;--muted:#56627a;--line:#d6dcea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1730;--ink:#eef1fa;--blue:#7d9bf0;--butter:#f4c542;--card:#18224a;--muted:#a3aed0;--line:#2a3562}}
+:root[data-theme="dark"]{--bg:#0f1730;--ink:#eef1fa;--blue:#7d9bf0;--butter:#f4c542;--card:#18224a;--muted:#a3aed0;--line:#2a3562}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 "DM Sans",system-ui,sans-serif}
+header{background:
+ repeating-linear-gradient(0deg,rgba(44,74,154,.55) 0 28px,transparent 28px 56px),
+ repeating-linear-gradient(90deg,rgba(44,74,154,.55) 0 28px,transparent 28px 56px),#fff;
+ padding:56px 20px}
+.sign{max-width:560px;margin:0 auto;background:var(--bg);border:3px solid var(--blue);padding:32px 24px;text-align:center}
+h1{font:400 clamp(2.4rem,9vw,4rem)/1 "DM Serif Display",Georgia,serif;margin:0 0 12px;color:var(--blue)}
+.sign p{margin:0;color:var(--muted)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px}
+nav a{color:var(--ink);text-decoration:none;padding:6px 14px;border-radius:99px;font-weight:500}
+nav a:hover,nav a:focus-visible{background:var(--butter);color:#14213d;outline:none}
+main{max-width:760px;margin:0 auto;padding:16px 20px 48px}
+section{padding-top:36px}
+h2{font:400 2rem/1.1 "DM Serif Display",Georgia,serif;margin:0 0 4px;color:var(--blue)}
+.note{margin:0 0 16px;color:var(--muted)}
+ul{list-style:none;margin:0;padding:0}
+li{display:flex;gap:16px;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px dashed var(--line)}
+li b{font-weight:700}
+li span{display:block;color:var(--muted);font-size:.93rem}
+.price{font-weight:700;white-space:nowrap}
+.tag{background:var(--butter);color:#14213d;font-size:.75rem;font-weight:700;padding:1px 8px;border-radius:99px;margin-left:6px}
+footer{border-top:1px solid var(--line);text-align:center;padding:28px 20px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="sign">
+    <h1>Blue Check Café</h1>
+    <p>Tea, bun maska and slow mornings. Open daily 7 am – 10 pm.</p>
+  </div>
+</header>
+<nav>
+  <a href="#hot">Hot drinks</a>
+  <a href="#cold">Cold drinks</a>
+  <a href="#bites">Bites</a>
+  <a href="#sweet">Sweets</a>
+</nav>
+<main>
+  <section id="hot">
+    <h2>Hot drinks</h2>
+    <p class="note">Brewed to order in small pots.</p>
+    <ul>
+      <li><div><b>Irani chai</b> <span class="tag">House</span><span>Slow-simmered tea with milk and a pinch of cardamom.</span></div><div class="price">₹90</div></li>
+      <li><div><b>Filter coffee</b><span>South Indian decoction, frothed with hot milk.</span></div><div class="price">₹110</div></li>
+      <li><div><b>Flat white</b><span>Double shot, silky steamed milk.</span></div><div class="price">₹190</div></li>
+      <li><div><b>Masala hot chocolate</b><span>Dark chocolate, cinnamon, dried ginger.</span></div><div class="price">₹210</div></li>
+    </ul>
+  </section>
+  <section id="cold">
+    <h2>Cold drinks</h2>
+    <p class="note">Made with fresh fruit and house syrups.</p>
+    <ul>
+      <li><div><b>Cold brew</b><span>Steeped 16 hours, served over large ice.</span></div><div class="price">₹200</div></li>
+      <li><div><b>Fresh lime soda</b><span>Sweet, salted or mixed.</span></div><div class="price">₹100</div></li>
+      <li><div><b>Mango lassi</b> <span class="tag">Seasonal</span><span>Alphonso mango blended with thick curd.</span></div><div class="price">₹180</div></li>
+      <li><div><b>Iced rose latte</b><span>Espresso, milk and rose syrup.</span></div><div class="price">₹230</div></li>
+    </ul>
+  </section>
+  <section id="bites">
+    <h2>Bites</h2>
+    <p class="note">Served all day. Vegetarian unless marked.</p>
+    <ul>
+      <li><div><b>Bun maska</b><span>Soft bun, salted butter. Best with chai.</span></div><div class="price">₹80</div></li>
+      <li><div><b>Keema pav</b> <span class="tag">Non-veg</span><span>Spiced minced mutton with buttered pav.</span></div><div class="price">₹280</div></li>
+      <li><div><b>Masala omelette</b><span>Two eggs, onion, chilli, coriander, toast.</span></div><div class="price">₹170</div></li>
+      <li><div><b>Grilled cheese sandwich</b><span>Sourdough, cheddar, green chutney.</span></div><div class="price">₹220</div></li>
+    </ul>
+  </section>
+  <section id="sweet">
+    <h2>Sweets</h2>
+    <p class="note">Baked each morning. When it's gone, it's gone.</p>
+    <ul>
+      <li><div><b>Mawa cake slice</b><span>Dense, milky and lightly spiced.</span></div><div class="price">₹120</div></li>
+      <li><div><b>Brownie</b><span>Fudgy, with sea salt.</span></div><div class="price">₹150</div></li>
+      <li><div><b>Shrewsbury biscuits</b><span>Six crumbly butter biscuits.</span></div><div class="price">₹100</div></li>
+    </ul>
+  </section>
+</main>
+<footer>Prices include taxes. Please tell us about any allergies when you order.</footer>
+</body>
+</html>
